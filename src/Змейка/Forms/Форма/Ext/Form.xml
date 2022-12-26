@@ -1,0 +1,2585 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Width>40</Width>
+	<Group>HorizontalIfPossible</Group>
+	<HorizontalSpacing>Half</HorizontalSpacing>
+	<VerticalSpacing>Half</VerticalSpacing>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа19" id="511">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="512"/>
+			<ChildItems>
+				<UsualGroup name="Игра" id="513">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Игра</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Игра</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ИграРасширеннаяПодсказка" id="514"/>
+					<ChildItems>
+						<UsualGroup name="Группа15" id="472">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Игра "Змейка"</v8:content>
+								</v8:item>
+							</Title>
+							<Height>3</Height>
+							<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="473"/>
+							<ChildItems>
+								<Button name="НачатьИгру" id="430">
+									<Type>UsualButton</Type>
+									<Width>22</Width>
+									<CommandName>Form.Command.НачатьИгру</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начать игру</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="НачатьИгруРасширеннаяПодсказка" id="431"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа14" id="467">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="468"/>
+							<ChildItems>
+								<LabelField name="Время" id="464">
+									<DataPath>Время</DataPath>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ВремяКонтекстноеМеню" id="465"/>
+									<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="466"/>
+								</LabelField>
+								<LabelField name="Счет" id="469">
+									<DataPath>Счет</DataPath>
+									<ContextMenu name="СчетКонтекстноеМеню" id="470"/>
+									<ExtendedTooltip name="СчетРасширеннаяПодсказка" id="471"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд1" id="107">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд1РасширеннаяПодсказка" id="108"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация1" id="104">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="106"/>
+									<Events>
+										<Event name="Click">Декорация1Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация2" id="109">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="110"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="111"/>
+									<Events>
+										<Event name="Click">Декорация2Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация3" id="112">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="114"/>
+									<Events>
+										<Event name="Click">Декорация3Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация4" id="115">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="117"/>
+									<Events>
+										<Event name="Click">Декорация4Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация5" id="118">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="120"/>
+									<Events>
+										<Event name="Click">Декорация5Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация6" id="123">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация6КонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="125"/>
+									<Events>
+										<Event name="Click">Декорация6Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация7" id="126">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="128"/>
+									<Events>
+										<Event name="Click">Декорация7Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация8" id="129">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация8КонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="131"/>
+									<Events>
+										<Event name="Click">Декорация8Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация9" id="132">
+									<TextColor>#64FF04</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация9КонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="134"/>
+									<Events>
+										<Event name="Click">Декорация9Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация10" id="135">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация10КонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="137"/>
+									<Events>
+										<Event name="Click">Декорация10Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд2" id="121">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд2РасширеннаяПодсказка" id="122"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация11" id="140">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="142"/>
+									<Events>
+										<Event name="Click">Декорация11Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация12" id="143">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация12КонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="145"/>
+									<Events>
+										<Event name="Click">Декорация12Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация13" id="146">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация13КонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="148"/>
+									<Events>
+										<Event name="Click">Декорация13Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация14" id="149">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация14КонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="151"/>
+									<Events>
+										<Event name="Click">Декорация14Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация15" id="152">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация15КонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="154"/>
+									<Events>
+										<Event name="Click">Декорация15Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация16" id="157">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация16КонтекстноеМеню" id="158"/>
+									<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="159"/>
+									<Events>
+										<Event name="Click">Декорация16Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация17" id="160">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация17КонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="162"/>
+									<Events>
+										<Event name="Click">Декорация17Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация18" id="163">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация18КонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="165"/>
+									<Events>
+										<Event name="Click">Декорация18Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация19" id="166">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация19КонтекстноеМеню" id="167"/>
+									<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="168"/>
+									<Events>
+										<Event name="Click">Декорация19Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация20" id="169">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация20КонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="171"/>
+									<Events>
+										<Event name="Click">Декорация20Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд3" id="138">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд3</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд3</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд3РасширеннаяПодсказка" id="139"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация21" id="174">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация21КонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="Декорация21РасширеннаяПодсказка" id="176"/>
+									<Events>
+										<Event name="Click">Декорация21Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация22" id="177">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация22КонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="Декорация22РасширеннаяПодсказка" id="179"/>
+									<Events>
+										<Event name="Click">Декорация22Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация23" id="180">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация23КонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="Декорация23РасширеннаяПодсказка" id="182"/>
+									<Events>
+										<Event name="Click">Декорация23Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация24" id="183">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация24КонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="Декорация24РасширеннаяПодсказка" id="185"/>
+									<Events>
+										<Event name="Click">Декорация24Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация25" id="186">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация25КонтекстноеМеню" id="187"/>
+									<ExtendedTooltip name="Декорация25РасширеннаяПодсказка" id="188"/>
+									<Events>
+										<Event name="Click">Декорация25Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация26" id="191">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация26КонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="Декорация26РасширеннаяПодсказка" id="193"/>
+									<Events>
+										<Event name="Click">Декорация26Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация27" id="194">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация27КонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="Декорация27РасширеннаяПодсказка" id="196"/>
+									<Events>
+										<Event name="Click">Декорация27Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация28" id="197">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация28КонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="Декорация28РасширеннаяПодсказка" id="199"/>
+									<Events>
+										<Event name="Click">Декорация28Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация29" id="200">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация29КонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="Декорация29РасширеннаяПодсказка" id="202"/>
+									<Events>
+										<Event name="Click">Декорация29Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация30" id="203">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация30КонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="Декорация30РасширеннаяПодсказка" id="205"/>
+									<Events>
+										<Event name="Click">Декорация30Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд4" id="206">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд4</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд4</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд4РасширеннаяПодсказка" id="207"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация31" id="208">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация31КонтекстноеМеню" id="209"/>
+									<ExtendedTooltip name="Декорация31РасширеннаяПодсказка" id="210"/>
+									<Events>
+										<Event name="Click">Декорация31Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация32" id="211">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация32КонтекстноеМеню" id="212"/>
+									<ExtendedTooltip name="Декорация32РасширеннаяПодсказка" id="213"/>
+									<Events>
+										<Event name="Click">Декорация32Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация33" id="214">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация33КонтекстноеМеню" id="215"/>
+									<ExtendedTooltip name="Декорация33РасширеннаяПодсказка" id="216"/>
+									<Events>
+										<Event name="Click">Декорация33Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация34" id="217">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация34КонтекстноеМеню" id="218"/>
+									<ExtendedTooltip name="Декорация34РасширеннаяПодсказка" id="219"/>
+									<Events>
+										<Event name="Click">Декорация34Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация35" id="220">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация35КонтекстноеМеню" id="221"/>
+									<ExtendedTooltip name="Декорация35РасширеннаяПодсказка" id="222"/>
+									<Events>
+										<Event name="Click">Декорация35Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация36" id="223">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация36КонтекстноеМеню" id="224"/>
+									<ExtendedTooltip name="Декорация36РасширеннаяПодсказка" id="225"/>
+									<Events>
+										<Event name="Click">Декорация36Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация37" id="226">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация37КонтекстноеМеню" id="227"/>
+									<ExtendedTooltip name="Декорация37РасширеннаяПодсказка" id="228"/>
+									<Events>
+										<Event name="Click">Декорация37Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация38" id="229">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация38КонтекстноеМеню" id="230"/>
+									<ExtendedTooltip name="Декорация38РасширеннаяПодсказка" id="231"/>
+									<Events>
+										<Event name="Click">Декорация38Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация39" id="232">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация39КонтекстноеМеню" id="233"/>
+									<ExtendedTooltip name="Декорация39РасширеннаяПодсказка" id="234"/>
+									<Events>
+										<Event name="Click">Декорация39Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация40" id="235">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация40КонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="Декорация40РасширеннаяПодсказка" id="237"/>
+									<Events>
+										<Event name="Click">Декорация40Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд5" id="238">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд5</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд5</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд5РасширеннаяПодсказка" id="239"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация41" id="240">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация41КонтекстноеМеню" id="241"/>
+									<ExtendedTooltip name="Декорация41РасширеннаяПодсказка" id="242"/>
+									<Events>
+										<Event name="Click">Декорация41Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация42" id="243">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация42КонтекстноеМеню" id="244"/>
+									<ExtendedTooltip name="Декорация42РасширеннаяПодсказка" id="245"/>
+									<Events>
+										<Event name="Click">Декорация42Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация43" id="246">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация43КонтекстноеМеню" id="247"/>
+									<ExtendedTooltip name="Декорация43РасширеннаяПодсказка" id="248"/>
+									<Events>
+										<Event name="Click">Декорация43Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация44" id="249">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.MoveRight</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация44КонтекстноеМеню" id="250"/>
+									<ExtendedTooltip name="Декорация44РасширеннаяПодсказка" id="251"/>
+									<Events>
+										<Event name="Click">Декорация44Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация45" id="252">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация45КонтекстноеМеню" id="253"/>
+									<ExtendedTooltip name="Декорация45РасширеннаяПодсказка" id="254"/>
+									<Events>
+										<Event name="Click">Декорация45Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация46" id="255">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация46КонтекстноеМеню" id="256"/>
+									<ExtendedTooltip name="Декорация46РасширеннаяПодсказка" id="257"/>
+									<Events>
+										<Event name="Click">Декорация46Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация47" id="258">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация47КонтекстноеМеню" id="259"/>
+									<ExtendedTooltip name="Декорация47РасширеннаяПодсказка" id="260"/>
+									<Events>
+										<Event name="Click">Декорация47Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация48" id="261">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация48КонтекстноеМеню" id="262"/>
+									<ExtendedTooltip name="Декорация48РасширеннаяПодсказка" id="263"/>
+									<Events>
+										<Event name="Click">Декорация48Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация49" id="264">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация49КонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="Декорация49РасширеннаяПодсказка" id="266"/>
+									<Events>
+										<Event name="Click">Декорация49Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация50" id="267">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация50КонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="Декорация50РасширеннаяПодсказка" id="269"/>
+									<Events>
+										<Event name="Click">Декорация50Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд6" id="270">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд6</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд6</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд6РасширеннаяПодсказка" id="271"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация51" id="272">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация51КонтекстноеМеню" id="273"/>
+									<ExtendedTooltip name="Декорация51РасширеннаяПодсказка" id="274"/>
+									<Events>
+										<Event name="Click">Декорация51Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация52" id="275">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация52КонтекстноеМеню" id="276"/>
+									<ExtendedTooltip name="Декорация52РасширеннаяПодсказка" id="277"/>
+									<Events>
+										<Event name="Click">Декорация52Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация53" id="278">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация53КонтекстноеМеню" id="279"/>
+									<ExtendedTooltip name="Декорация53РасширеннаяПодсказка" id="280"/>
+									<Events>
+										<Event name="Click">Декорация53Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация54" id="281">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация54КонтекстноеМеню" id="282"/>
+									<ExtendedTooltip name="Декорация54РасширеннаяПодсказка" id="283"/>
+									<Events>
+										<Event name="Click">Декорация54Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация55" id="284">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация55КонтекстноеМеню" id="285"/>
+									<ExtendedTooltip name="Декорация55РасширеннаяПодсказка" id="286"/>
+									<Events>
+										<Event name="Click">Декорация55Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация56" id="287">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация56КонтекстноеМеню" id="288"/>
+									<ExtendedTooltip name="Декорация56РасширеннаяПодсказка" id="289"/>
+									<Events>
+										<Event name="Click">Декорация56Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация57" id="290">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация57КонтекстноеМеню" id="291"/>
+									<ExtendedTooltip name="Декорация57РасширеннаяПодсказка" id="292"/>
+									<Events>
+										<Event name="Click">Декорация57Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация58" id="293">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация58КонтекстноеМеню" id="294"/>
+									<ExtendedTooltip name="Декорация58РасширеннаяПодсказка" id="295"/>
+									<Events>
+										<Event name="Click">Декорация58Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация59" id="296">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация59КонтекстноеМеню" id="297"/>
+									<ExtendedTooltip name="Декорация59РасширеннаяПодсказка" id="298"/>
+									<Events>
+										<Event name="Click">Декорация59Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация60" id="299">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация60КонтекстноеМеню" id="300"/>
+									<ExtendedTooltip name="Декорация60РасширеннаяПодсказка" id="301"/>
+									<Events>
+										<Event name="Click">Декорация60Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд7" id="302">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд7</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд7</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд7РасширеннаяПодсказка" id="303"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация61" id="304">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация61КонтекстноеМеню" id="305"/>
+									<ExtendedTooltip name="Декорация61РасширеннаяПодсказка" id="306"/>
+									<Events>
+										<Event name="Click">Декорация61Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация62" id="307">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация62КонтекстноеМеню" id="308"/>
+									<ExtendedTooltip name="Декорация62РасширеннаяПодсказка" id="309"/>
+									<Events>
+										<Event name="Click">Декорация62Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация63" id="310">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация63КонтекстноеМеню" id="311"/>
+									<ExtendedTooltip name="Декорация63РасширеннаяПодсказка" id="312"/>
+									<Events>
+										<Event name="Click">Декорация63Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация64" id="313">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация64КонтекстноеМеню" id="314"/>
+									<ExtendedTooltip name="Декорация64РасширеннаяПодсказка" id="315"/>
+									<Events>
+										<Event name="Click">Декорация64Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация65" id="316">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация65КонтекстноеМеню" id="317"/>
+									<ExtendedTooltip name="Декорация65РасширеннаяПодсказка" id="318"/>
+									<Events>
+										<Event name="Click">Декорация65Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация66" id="319">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация66КонтекстноеМеню" id="320"/>
+									<ExtendedTooltip name="Декорация66РасширеннаяПодсказка" id="321"/>
+									<Events>
+										<Event name="Click">Декорация66Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация67" id="322">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация67КонтекстноеМеню" id="323"/>
+									<ExtendedTooltip name="Декорация67РасширеннаяПодсказка" id="324"/>
+									<Events>
+										<Event name="Click">Декорация67Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация68" id="325">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация68КонтекстноеМеню" id="326"/>
+									<ExtendedTooltip name="Декорация68РасширеннаяПодсказка" id="327"/>
+									<Events>
+										<Event name="Click">Декорация68Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация69" id="328">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация69КонтекстноеМеню" id="329"/>
+									<ExtendedTooltip name="Декорация69РасширеннаяПодсказка" id="330"/>
+									<Events>
+										<Event name="Click">Декорация69Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация70" id="331">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация70КонтекстноеМеню" id="332"/>
+									<ExtendedTooltip name="Декорация70РасширеннаяПодсказка" id="333"/>
+									<Events>
+										<Event name="Click">Декорация70Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд8" id="334">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд8</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд8</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд8РасширеннаяПодсказка" id="335"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация71" id="336">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация71КонтекстноеМеню" id="337"/>
+									<ExtendedTooltip name="Декорация71РасширеннаяПодсказка" id="338"/>
+									<Events>
+										<Event name="Click">Декорация71Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация72" id="339">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация72КонтекстноеМеню" id="340"/>
+									<ExtendedTooltip name="Декорация72РасширеннаяПодсказка" id="341"/>
+									<Events>
+										<Event name="Click">Декорация72Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация73" id="342">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация73КонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="Декорация73РасширеннаяПодсказка" id="344"/>
+									<Events>
+										<Event name="Click">Декорация73Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация74" id="345">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация74КонтекстноеМеню" id="346"/>
+									<ExtendedTooltip name="Декорация74РасширеннаяПодсказка" id="347"/>
+									<Events>
+										<Event name="Click">Декорация74Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация75" id="348">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация75КонтекстноеМеню" id="349"/>
+									<ExtendedTooltip name="Декорация75РасширеннаяПодсказка" id="350"/>
+									<Events>
+										<Event name="Click">Декорация75Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация76" id="351">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация76КонтекстноеМеню" id="352"/>
+									<ExtendedTooltip name="Декорация76РасширеннаяПодсказка" id="353"/>
+									<Events>
+										<Event name="Click">Декорация76Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация77" id="354">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация77КонтекстноеМеню" id="355"/>
+									<ExtendedTooltip name="Декорация77РасширеннаяПодсказка" id="356"/>
+									<Events>
+										<Event name="Click">Декорация77Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация78" id="357">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация78КонтекстноеМеню" id="358"/>
+									<ExtendedTooltip name="Декорация78РасширеннаяПодсказка" id="359"/>
+									<Events>
+										<Event name="Click">Декорация78Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация79" id="360">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация79КонтекстноеМеню" id="361"/>
+									<ExtendedTooltip name="Декорация79РасширеннаяПодсказка" id="362"/>
+									<Events>
+										<Event name="Click">Декорация79Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация80" id="363">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация80КонтекстноеМеню" id="364"/>
+									<ExtendedTooltip name="Декорация80РасширеннаяПодсказка" id="365"/>
+									<Events>
+										<Event name="Click">Декорация80Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд9" id="366">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд9</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд9</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд9РасширеннаяПодсказка" id="367"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация81" id="368">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация81КонтекстноеМеню" id="369"/>
+									<ExtendedTooltip name="Декорация81РасширеннаяПодсказка" id="370"/>
+									<Events>
+										<Event name="Click">Декорация81Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация82" id="371">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация82КонтекстноеМеню" id="372"/>
+									<ExtendedTooltip name="Декорация82РасширеннаяПодсказка" id="373"/>
+									<Events>
+										<Event name="Click">Декорация82Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация83" id="374">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация83КонтекстноеМеню" id="375"/>
+									<ExtendedTooltip name="Декорация83РасширеннаяПодсказка" id="376"/>
+									<Events>
+										<Event name="Click">Декорация83Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация84" id="377">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация84КонтекстноеМеню" id="378"/>
+									<ExtendedTooltip name="Декорация84РасширеннаяПодсказка" id="379"/>
+									<Events>
+										<Event name="Click">Декорация84Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация85" id="380">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация85КонтекстноеМеню" id="381"/>
+									<ExtendedTooltip name="Декорация85РасширеннаяПодсказка" id="382"/>
+									<Events>
+										<Event name="Click">Декорация85Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация86" id="383">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация86КонтекстноеМеню" id="384"/>
+									<ExtendedTooltip name="Декорация86РасширеннаяПодсказка" id="385"/>
+									<Events>
+										<Event name="Click">Декорация86Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация87" id="386">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация87КонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="Декорация87РасширеннаяПодсказка" id="388"/>
+									<Events>
+										<Event name="Click">Декорация87Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация88" id="389">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация88КонтекстноеМеню" id="390"/>
+									<ExtendedTooltip name="Декорация88РасширеннаяПодсказка" id="391"/>
+									<Events>
+										<Event name="Click">Декорация88Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация89" id="392">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация89КонтекстноеМеню" id="393"/>
+									<ExtendedTooltip name="Декорация89РасширеннаяПодсказка" id="394"/>
+									<Events>
+										<Event name="Click">Декорация89Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация90" id="395">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация90КонтекстноеМеню" id="396"/>
+									<ExtendedTooltip name="Декорация90РасширеннаяПодсказка" id="397"/>
+									<Events>
+										<Event name="Click">Декорация90Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Ряд10" id="398">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд10</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ряд10</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Ряд10РасширеннаяПодсказка" id="399"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация91" id="400">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация91КонтекстноеМеню" id="401"/>
+									<ExtendedTooltip name="Декорация91РасширеннаяПодсказка" id="402"/>
+									<Events>
+										<Event name="Click">Декорация91Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация92" id="403">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация92КонтекстноеМеню" id="404"/>
+									<ExtendedTooltip name="Декорация92РасширеннаяПодсказка" id="405"/>
+									<Events>
+										<Event name="Click">Декорация92Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация93" id="406">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация93КонтекстноеМеню" id="407"/>
+									<ExtendedTooltip name="Декорация93РасширеннаяПодсказка" id="408"/>
+									<Events>
+										<Event name="Click">Декорация93Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация94" id="409">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация94КонтекстноеМеню" id="410"/>
+									<ExtendedTooltip name="Декорация94РасширеннаяПодсказка" id="411"/>
+									<Events>
+										<Event name="Click">Декорация94Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация95" id="412">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация95КонтекстноеМеню" id="413"/>
+									<ExtendedTooltip name="Декорация95РасширеннаяПодсказка" id="414"/>
+									<Events>
+										<Event name="Click">Декорация95Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация96" id="415">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация96КонтекстноеМеню" id="416"/>
+									<ExtendedTooltip name="Декорация96РасширеннаяПодсказка" id="417"/>
+									<Events>
+										<Event name="Click">Декорация96Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация97" id="418">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация97КонтекстноеМеню" id="419"/>
+									<ExtendedTooltip name="Декорация97РасширеннаяПодсказка" id="420"/>
+									<Events>
+										<Event name="Click">Декорация97Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация98" id="421">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация98КонтекстноеМеню" id="422"/>
+									<ExtendedTooltip name="Декорация98РасширеннаяПодсказка" id="423"/>
+									<Events>
+										<Event name="Click">Декорация98Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация99" id="424">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация99КонтекстноеМеню" id="425"/>
+									<ExtendedTooltip name="Декорация99РасширеннаяПодсказка" id="426"/>
+									<Events>
+										<Event name="Click">Декорация99Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<PictureDecoration name="Декорация100" id="427">
+									<TextColor>#013310</TextColor>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация100КонтекстноеМеню" id="428"/>
+									<ExtendedTooltip name="Декорация100РасширеннаяПодсказка" id="429"/>
+									<Events>
+										<Event name="Click">Декорация100Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="НастройкиСтен" id="482">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки:</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки стен</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>23</Width>
+							<HorizontalSpacing>Half</HorizontalSpacing>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="НастройкиСтенРасширеннаяПодсказка" id="483"/>
+							<ChildItems>
+								<Button name="ДобавитьСтены" id="484">
+									<Type>UsualButton</Type>
+									<Width>11</Width>
+									<CommandName>Form.Command.ДобавитьСтены</CommandName>
+									<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
+									<ExtendedTooltip name="ДобавитьСтеныРасширеннаяПодсказка" id="485"/>
+								</Button>
+								<Button name="УдалитьСтены" id="492">
+									<Type>UsualButton</Type>
+									<Width>11</Width>
+									<CommandName>Form.Command.УдалитьСтены</CommandName>
+									<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
+									<ExtendedTooltip name="УдалитьСтеныРасширеннаяПодсказка" id="493"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Выбор_Положения" id="488">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбор положения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выбор положения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>23</Width>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Выбор_ПоложенияРасширеннаяПодсказка" id="489"/>
+							<ChildItems>
+								<Button name="ВыборПоложения" id="486">
+									<Type>UsualButton</Type>
+									<Width>14</Width>
+									<CommandName>Form.Command.ВыборПоложения</CommandName>
+									<Font ref="style:NormalTextFont" kind="StyleItem"/>
+									<ExtendedTooltip name="ВыборПоложенияРасширеннаяПодсказка" id="487"/>
+								</Button>
+								<Button name="Уровни" id="623">
+									<Type>UsualButton</Type>
+									<Width>8</Width>
+									<CommandName>Form.Command.Уровни</CommandName>
+									<ExtendedTooltip name="УровниРасширеннаяПодсказка" id="624"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа11" id="434">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление</v8:content>
+								</v8:item>
+							</Title>
+							<Width>23</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="435"/>
+							<ChildItems>
+								<Button name="Вверх" id="432">
+									<Type>UsualButton</Type>
+									<TitleHeight>15</TitleHeight>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<MaxWidth>9</MaxWidth>
+									<Height>2</Height>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.Вверх</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.MoveUp</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ВверхРасширеннаяПодсказка" id="433"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа12" id="442">
+							<Width>23</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="443"/>
+							<ChildItems>
+								<Button name="Влево" id="444">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.Влево</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ВлевоРасширеннаяПодсказка" id="445"/>
+								</Button>
+								<LabelDecoration name="Декорация103" id="448">
+									<Width>3</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="Декорация103КонтекстноеМеню" id="449"/>
+									<ExtendedTooltip name="Декорация103РасширеннаяПодсказка" id="450"/>
+								</LabelDecoration>
+								<Button name="Вправо" id="446">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.Вправо</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.MoveRight</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ВправоРасширеннаяПодсказка" id="447"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа13" id="457">
+							<Width>23</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="458"/>
+							<ChildItems>
+								<Button name="Вниз" id="459">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.Вниз</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.MoveDown</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ВнизРасширеннаяПодсказка" id="460"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Информация" id="534">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ИнформацияРасширеннаяПодсказка" id="535"/>
+					<ChildItems>
+						<UsualGroup name="Описание" id="497">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>53</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="498"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация" id="494">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В данной игре реализованны следующие механики, такие как:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияКонтекстноеМеню" id="495"/>
+									<ExtendedTooltip name="ДекорацияРасширеннаяПодсказка" id="496"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация101" id="499">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Движение змейки в 4 направлениях (вверх, вниз, вправо, влево)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация101КонтекстноеМеню" id="500"/>
+									<ExtendedTooltip name="Декорация101РасширеннаяПодсказка" id="501"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация102" id="502">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Случайная генерация яблок на игровом поле</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация102КонтекстноеМеню" id="503"/>
+									<ExtendedTooltip name="Декорация102РасширеннаяПодсказка" id="504"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация104" id="505">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Добавление сигментов к змейке после столкновения с яблоком</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация104КонтекстноеМеню" id="506"/>
+									<ExtendedTooltip name="Декорация104РасширеннаяПодсказка" id="507"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация118" id="561">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Подсчет съеденых яблок("Счет:") и прошедшего времени("Время:")</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация118КонтекстноеМеню" id="562"/>
+									<ExtendedTooltip name="Декорация118РасширеннаяПодсказка" id="563"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация105" id="508">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Перенос змейки на противоположный конец поля, при выходе за границу</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация105КонтекстноеМеню" id="509"/>
+									<ExtendedTooltip name="Декорация105РасширеннаяПодсказка" id="510"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация106" id="515">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Изменение начального положения, а также начального направления змейки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация106КонтекстноеМеню" id="516"/>
+									<ExtendedTooltip name="Декорация106РасширеннаяПодсказка" id="517"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация107" id="518">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Создание своего уровня (установка произвольных стен)</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация107КонтекстноеМеню" id="519"/>
+									<ExtendedTooltip name="Декорация107РасширеннаяПодсказка" id="520"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация108" id="521">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Очистка игрового поля от всех стен</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация108КонтекстноеМеню" id="522"/>
+									<ExtendedTooltip name="Декорация108РасширеннаяПодсказка" id="523"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация129" id="625">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>-Режим прохождения уровней и 5 уровней</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация129КонтекстноеМеню" id="626"/>
+									<ExtendedTooltip name="Декорация129РасширеннаяПодсказка" id="627"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="УсловныеОбозначения" id="524">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Условные обозначения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Условные обозначения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="УсловныеОбозначенияРасширеннаяПодсказка" id="525"/>
+							<ChildItems>
+								<UsualGroup name="ГоловаЗмейки" id="536">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Голова змейки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Голова змейки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГоловаЗмейкиРасширеннаяПодсказка" id="537"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация111" id="538">
+											<Picture>
+												<xr:Ref>StdPicture.MoveUp</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация111КонтекстноеМеню" id="539"/>
+											<ExtendedTooltip name="Декорация111РасширеннаяПодсказка" id="540"/>
+										</PictureDecoration>
+										<PictureDecoration name="Декорация112" id="541">
+											<Picture>
+												<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация112КонтекстноеМеню" id="542"/>
+											<ExtendedTooltip name="Декорация112РасширеннаяПодсказка" id="543"/>
+										</PictureDecoration>
+										<PictureDecoration name="Декорация113" id="544">
+											<Picture>
+												<xr:Ref>StdPicture.MoveDown</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация113КонтекстноеМеню" id="545"/>
+											<ExtendedTooltip name="Декорация113РасширеннаяПодсказка" id="546"/>
+										</PictureDecoration>
+										<PictureDecoration name="Декорация114" id="547">
+											<Picture>
+												<xr:Ref>StdPicture.MoveRight</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация114КонтекстноеМеню" id="548"/>
+											<ExtendedTooltip name="Декорация114РасширеннаяПодсказка" id="549"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация115" id="550">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>- "Голова" змейки</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация115КонтекстноеМеню" id="551"/>
+											<ExtendedTooltip name="Декорация115РасширеннаяПодсказка" id="552"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ПустаяЯчейка" id="526">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пустая ячейка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пустая ячейка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ПустаяЯчейкаРасширеннаяПодсказка" id="527"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация109" id="528">
+											<Picture>
+												<xr:Ref>StdPicture.AppearanceCircleEmpty</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация109КонтекстноеМеню" id="529"/>
+											<ExtendedTooltip name="Декорация109РасширеннаяПодсказка" id="530"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация110" id="531">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>- Пустая ячейка</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация110КонтекстноеМеню" id="532"/>
+											<ExtendedTooltip name="Декорация110РасширеннаяПодсказка" id="533"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Яблоко" id="553">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Яблоко</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Яблоко</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ЯблокоРасширеннаяПодсказка" id="554"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация116" id="555">
+											<Picture>
+												<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация116КонтекстноеМеню" id="556"/>
+											<ExtendedTooltip name="Декорация116РасширеннаяПодсказка" id="557"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация117" id="558">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>- Яблоко</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация117КонтекстноеМеню" id="559"/>
+											<ExtendedTooltip name="Декорация117РасширеннаяПодсказка" id="560"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Стена" id="564">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стена</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стена</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтенаРасширеннаяПодсказка" id="565"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация119" id="566">
+											<Picture>
+												<xr:Ref>StdPicture.AppearanceCircleBlack</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация119КонтекстноеМеню" id="567"/>
+											<ExtendedTooltip name="Декорация119РасширеннаяПодсказка" id="568"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация120" id="569">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>- Стена</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация120КонтекстноеМеню" id="570"/>
+											<ExtendedTooltip name="Декорация120РасширеннаяПодсказка" id="571"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Управление" id="604">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="УправлениеРасширеннаяПодсказка" id="605"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация122" id="606">
+									<Width>44</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Управлять змейкой можно используя кнопки на экране или клавишами:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация122КонтекстноеМеню" id="607"/>
+									<ExtendedTooltip name="Декорация122РасширеннаяПодсказка" id="608"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация123" id="609">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>"W" - Вверх</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация123КонтекстноеМеню" id="610"/>
+									<ExtendedTooltip name="Декорация123РасширеннаяПодсказка" id="611"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация125" id="612">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>"A" - Влево</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация125КонтекстноеМеню" id="613"/>
+									<ExtendedTooltip name="Декорация125РасширеннаяПодсказка" id="614"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация127" id="615">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>"S" - Вниз</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация127КонтекстноеМеню" id="616"/>
+									<ExtendedTooltip name="Декорация127РасширеннаяПодсказка" id="617"/>
+								</LabelDecoration>
+								<LabelDecoration name="Декорация128" id="618">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>"D" - Вправо</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация128КонтекстноеМеню" id="619"/>
+									<ExtendedTooltip name="Декорация128РасширеннаяПодсказка" id="620"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа1" id="621">
+					<Width>42</Width>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="622"/>
+					<ChildItems>
+						<UsualGroup name="Настройки" id="572">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="573"/>
+							<ChildItems>
+								<UsualGroup name="Добавить_Стены" id="598">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить стены</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#8F69FF</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Добавить стены</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="Добавить_СтеныРасширеннаяПодсказка" id="599"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация121" id="574">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>очищяет игровое поле и позволяет установить стены путем нажатия на ячейки. После установки стен для начала игры нажмите "Начать игру". Стены сохраняются до их удаления или установки новых. </v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация121КонтекстноеМеню" id="575"/>
+											<ExtendedTooltip name="Декорация121РасширеннаяПодсказка" id="576"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Удалить_стены" id="600">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Удалить стены</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#8F69FF</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Удалить стены</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="Удалить_стеныРасширеннаяПодсказка" id="601"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация124" id="587">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>удаляет все стены</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация124КонтекстноеМеню" id="588"/>
+											<ExtendedTooltip name="Декорация124РасширеннаяПодсказка" id="589"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Выбор_положения_" id="602">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбор положения</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#8F69FF</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбор положения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="Выбор_положения_РасширеннаяПодсказка" id="603"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация126" id="595">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>позволяет выбрать начальное положение, а также начальное направление змейки (направление необходимо выбрать до установки положения). Для начала игры нажмите "Начать игру". Установленное положение и направление сохранится до последующей установки положения.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация126КонтекстноеМеню" id="596"/>
+											<ExtendedTooltip name="Декорация126РасширеннаяПодсказка" id="597"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа2" id="628">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Уровни</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>#8F69FF</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="629"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация130" id="630">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запускает режим прохождения уровней и генерирует уровень. Для прохождения уровня необходимо собрать 10 яблок. При прохождении уровня автоматически запускается следующий уровень. Количество пройденных уровней сохраняется и при выходе из режима уровней и повторном заходе в него вы начнете с того уровня на котором закончили</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация130КонтекстноеМеню" id="631"/>
+											<ExtendedTooltip name="Декорация130РасширеннаяПодсказка" id="632"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ВнешняяОбработка1</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Время" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>8</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Секунды" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секунды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Направление" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Голова" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Голова</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Змейка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Змейка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Яблоко" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Яблоко</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УникальностьЯблока" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уникальность яблока</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачальноеНаправление" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальное Направление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Счет" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Счет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДобавитьСтены" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить стены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыборПоложения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор положения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Стены" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачальнаяПозиция" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальная позиция</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Уровни" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уровни</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СменаНаправления" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена направления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Пройдено" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пройдено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Яблочко" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Яблочко</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СмертьОтСтены" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смерть от стены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УровеньПройден" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уровень пройден</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НачатьИгру" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать игру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать игру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьИгру</Action>
+		</Command>
+		<Command name="Вверх" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>⇧</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>W</Shortcut>
+			<Action>Вверх</Action>
+		</Command>
+		<Command name="Влево" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Влево</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Влево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>A</Shortcut>
+			<Action>Влево</Action>
+		</Command>
+		<Command name="Вправо" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вправо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вправо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>D</Shortcut>
+			<Action>Вправо</Action>
+		</Command>
+		<Command name="Вниз" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вниз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вниз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>S</Shortcut>
+			<Action>Вниз</Action>
+		</Command>
+		<Command name="ДобавитьСтены" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить стены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить стены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьСтены</Action>
+		</Command>
+		<Command name="ВыборПоложения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор положения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор положения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыборПоложения</Action>
+		</Command>
+		<Command name="УдалитьСтены" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить стены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить стены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьСтены</Action>
+		</Command>
+		<Command name="Уровни" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уровни</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уровни</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Уровни</Action>
+		</Command>
+	</Commands>
+</Form>
