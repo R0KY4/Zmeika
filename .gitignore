@@ -1,4 +1,3 @@
-build/
 features/**/*.epf
 test/**/*.epf
 tools/**/*.epf
